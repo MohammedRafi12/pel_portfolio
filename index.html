@@ -94,7 +94,7 @@
         <div class="relative mb-6 group">
           <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
           <div class="relative w-36 h-36 rounded-full overflow-hidden border-2 border-slate-700 bg-slate-900 flex items-center justify-center">
-            <i data-lucide="user" class="w-16 h-16 text-slate-400"></i>
+            <img src="assets/profile.jpg" alt="Mohammed Rafi Shaik" class="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -132,10 +132,10 @@
         </h2>
         <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm space-y-4 text-slate-300 leading-relaxed">
           <p>
-            I am a Computer Science and Engineering student at <strong>Lovely Professional University</strong>[cite: 1]. My academic journey is built on continuous technical growth, achieving an 8.67 CGPA in B.Tech[cite: 1], 97% in Higher Secondary Education[cite: 1], and 95% in Secondary Education[cite: 1].
+            I am a Computer Science and Engineering student at <strong>Lovely Professional University</strong>. My academic journey is built on continuous technical growth, achieving an 8.67 CGPA in B.Tech, 97% in Higher Secondary Education, and 95% in Secondary Education.
           </p>
           <p>
-            My experience spans full-stack application development to machine learning and natural language processing[cite: 1]. I enjoy solving complex challenges through structured algorithms and scalable data solutions[cite: 1].
+            My experience spans full-stack application development to machine learning and natural language processing. I enjoy solving complex challenges through structured algorithms and scalable data solutions.
           </p>
         </div>
       </div>
@@ -208,7 +208,7 @@
           <!-- Project 1 -->
           <div class="project-card group bg-slate-900/60 border border-slate-800 hover:border-slate-700 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="web">
             <div class="h-48 overflow-hidden bg-slate-950 flex items-center justify-center border-b border-slate-800">
-              <img src="Expense Tracker.jpg" alt="Student Expense Tracker" class="w-full h-full object-contain p-2 group-hover:scale-105 transition duration-300" />
+              <img src="assets/Expense%20Tracker.jpg" alt="Student Expense Tracker" class="w-full h-full object-contain p-2 group-hover:scale-105 transition duration-300" />
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
@@ -217,7 +217,7 @@
                   <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 font-medium">Completed</span>
                 </div>
                 <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-                  Record, manage, and monitor daily student expenses[cite: 1]. Includes CRUD operations, categorization, and automatic totals[cite: 1].
+                  Record, manage, and monitor daily student expenses. Includes CRUD operations, categorization, and automatic totals.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-6">
                   <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300 font-mono">HTML</span>
@@ -234,7 +234,7 @@
           <!-- Project 2 -->
           <div class="project-card group bg-slate-900/60 border border-slate-800 hover:border-slate-700 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="aiml">
             <div class="h-48 overflow-hidden bg-slate-950 flex items-center justify-center border-b border-slate-800">
-              <img src="Google Spam Algorithm Update Rolling Out on October 19, 2022.jpg" alt="AI Spam Detection" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+              <img src="assets/Google%20Spam%20Algorithm%20Update%20Rolling%20Out%20on%20October%2019,%202022.jpg" alt="AI Spam Detection" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
@@ -243,7 +243,7 @@
                   <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-950 text-amber-400 border border-amber-800 font-medium">In Progress</span>
                 </div>
                 <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-                  NLP and ML spam classification pipeline using TF-IDF feature extraction[cite: 1]. Achieved 98.16% accuracy and 92.31% F1-score with SVM[cite: 1], deployed via Streamlit[cite: 1].
+                  NLP and ML spam classification pipeline using TF-IDF feature extraction. Achieved 98.16% accuracy and 92.31% F1-score with SVM, deployed via Streamlit.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-6">
                   <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300 font-mono">Python</span>
@@ -316,104 +316,69 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Cert 1 -->
-          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col">
-            <div class="bg-slate-950 p-2 cursor-pointer group relative" onclick="openCertModal('cert1-1.jpeg')">
-              <img src="cert1-1.jpeg" alt="Network Management Systems Fundamentals Certificate" class="w-full h-auto rounded-lg border border-slate-800" />
-              <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition rounded-lg">
-                <span class="text-xs font-semibold text-white flex items-center gap-1.5"><i data-lucide="zoom-in" class="w-4 h-4"></i> Click to View</span>
+          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+            <div class="flex items-start gap-4">
+              <div class="p-3 bg-indigo-950/60 border border-indigo-800/50 rounded-xl text-indigo-400">
+                <i data-lucide="award" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white mb-1">Machine Learning Specialization</h3>
+                <p class="text-sm text-slate-400 mb-4">DeepLearning.AI &amp; Stanford University</p>
               </div>
             </div>
-            <div class="p-6">
-              <h3 class="font-bold text-white text-base mb-1">Network Management Systems Fundamentals</h3>
-              <p class="text-xs text-indigo-400 mb-2">Infosys Springboard • Issued Jan 26, 2026</p>
-            </div>
+            <span class="text-xs px-3 py-1 rounded-full bg-slate-800 text-indigo-300 w-fit font-medium">Credential Verified</span>
           </div>
 
           <!-- Cert 2 -->
-          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col">
-            <div class="bg-slate-950 p-2 cursor-pointer group relative" onclick="openCertModal('cert2-1.jpeg')">
-              <img src="cert2-1.jpeg" alt="Programming Using C++ Certificate" class="w-full h-auto rounded-lg border border-slate-800" />
-              <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition rounded-lg">
-                <span class="text-xs font-semibold text-white flex items-center gap-1.5"><i data-lucide="zoom-in" class="w-4 h-4"></i> Click to View</span>
+          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+            <div class="flex items-start gap-4">
+              <div class="p-3 bg-indigo-950/60 border border-indigo-800/50 rounded-xl text-indigo-400">
+                <i data-lucide="award" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white mb-1">Python for Data Science</h3>
+                <p class="text-sm text-slate-400 mb-4">IBM</p>
               </div>
             </div>
-            <div class="p-6">
-              <h3 class="font-bold text-white text-base mb-1">Programming Using C++</h3>
-              <p class="text-xs text-indigo-400 mb-2">Infosys Springboard • Issued Feb 6, 2026</p>
-            </div>
+            <span class="text-xs px-3 py-1 rounded-full bg-slate-800 text-indigo-300 w-fit font-medium">Credential Verified</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= ACHIEVEMENTS ================= -->
     <!-- ================= ACHIEVEMENTS ================= -->
     <section id="achievements" class="py-20 px-6 border-t border-slate-800/80 bg-slate-950/40">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-8 flex items-center gap-3">
-          <i data-lucide="sparkles" class="text-indigo-400 w-7 h-7"></i> Achievements
+          <i data-lucide="trophy" class="text-indigo-400 w-7 h-7"></i> Key Achievements
         </h2>
-
-        <div class="space-y-4">
-          <!-- Solved Many Programming Codes -->
-          <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl flex items-start gap-4">
-            <div class="p-2.5 bg-indigo-950 text-indigo-400 rounded-xl border border-indigo-800">
-              <i data-lucide="code" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-white text-base">Solved Many Programming Codes</h3>
-              <p class="text-sm text-slate-300 mt-1">Actively practiced and solved numerous algorithmic challenges and programming problems across diverse platforms to strengthen core problem-solving and coding proficiency.</p>
-            </div>
-          </div>
-
-          <!-- Community Development Project -->
-          <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl flex items-start gap-4">
-            <div class="p-2.5 bg-indigo-950 text-indigo-400 rounded-xl border border-indigo-800">
-              <i data-lucide="shield-alert" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-white text-base">Community Development Project</h3>
-              <p class="text-sm text-slate-300 mt-1">Successfully organized and contributed to digital and cyber awareness initiatives for community engagement[cite: 1].</p>
-            </div>
-          </div>
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm space-y-4 text-slate-300 leading-relaxed">
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-indigo-400 mt-0.5 shrink-0"></i>
+              <span>Maintained a consistent <strong>8.67 CGPA</strong> across B.Tech CSE coursework.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-indigo-400 mt-0.5 shrink-0"></i>
+              <span>Engineered high-accuracy NLP classification pipelines achieving over <strong>98% accuracy</strong>.</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ================= CONTACT & SOCIALS ================= -->
+    <!-- ================= CONTACT ================= -->
     <section id="contact" class="py-20 px-6 border-t border-slate-800/80">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-4">Get In Touch</h2>
-        <p class="text-slate-400 text-sm max-w-md mx-auto mb-10">
-          Feel free to reach out for collaborations, project inquiries, or AI/ML discussions!
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-4 flex items-center justify-center gap-3">
+          <i data-lucide="send" class="text-indigo-400 w-7 h-7"></i> Get In Touch
+        </h2>
+        <p class="text-slate-400 mb-8 max-w-lg mx-auto">
+          Feel free to reach out for collaboration opportunities, project inquiries, or any questions.
         </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
-          <a href="mailto:mohammedrafi4727@gmail.com" class="p-6 bg-slate-900/60 border border-slate-800 hover:border-slate-700 rounded-2xl flex flex-col items-center gap-2 group transition duration-200">
-            <i data-lucide="mail" class="w-6 h-6 text-indigo-400 group-hover:scale-110 transition"></i>
-            <span class="text-xs uppercase font-medium tracking-wider text-slate-400">Email</span>
-            <span class="text-sm font-semibold text-slate-200 break-all">mohammedrafi4727@gmail.com</span>
-          </a>
-
-          <a href="tel:+919703832820" class="p-6 bg-slate-900/60 border border-slate-800 hover:border-slate-700 rounded-2xl flex flex-col items-center gap-2 group transition duration-200">
-            <i data-lucide="phone" class="w-6 h-6 text-indigo-400 group-hover:scale-110 transition"></i>
-            <span class="text-xs uppercase font-medium tracking-wider text-slate-400">Phone</span>
-            <span class="text-sm font-semibold text-slate-200">+91 9703832820</span>
-          </a>
-
-          <div class="p-6 bg-slate-900/60 border border-slate-800 rounded-2xl flex flex-col items-center gap-2">
-            <i data-lucide="map-pin" class="w-6 h-6 text-indigo-400"></i>
-            <span class="text-xs uppercase font-medium tracking-wider text-slate-400">Location</span>
-            <span class="text-sm font-semibold text-slate-200">Nandyala, Andhra Pradesh</span>
-          </div>
-        </div>
-
-        <div class="flex items-center justify-center gap-6 pt-6 border-t border-slate-900">
-          <a href="https://www.linkedin.com/in/mohammed-rafi-shaik-9186b3383/" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-900 border border-slate-800 hover:border-indigo-500 rounded-full text-slate-300 hover:text-white transition duration-200" title="LinkedIn Profile">
-            <i data-lucide="linkedin" class="w-6 h-6"></i>
-          </a>
-          <a href="https://github.com/MohammedRafi12" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-900 border border-slate-800 hover:border-indigo-500 rounded-full text-slate-300 hover:text-white transition duration-200" title="GitHub Profile">
-            <i data-lucide="github" class="w-6 h-6"></i>
+        <div class="flex justify-center gap-4">
+          <a href="https://www.linkedin.com/in/mohammed-rafi-shaik-9186b3383/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition-colors">
+            <i data-lucide="linkedin" class="w-5 h-5"></i> Connect on LinkedIn
           </a>
         </div>
       </div>
@@ -421,37 +386,16 @@
 
   </main>
 
-  <!-- ================= LIGHTBOX MODAL ================= -->
-  <div id="certModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
-    <div class="relative max-w-3xl w-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden p-2">
-      <button onclick="closeCertModal()" class="absolute top-4 right-4 z-10 p-2 bg-slate-950/80 text-slate-300 hover:text-white rounded-full border border-slate-700">
-        <i data-lucide="x" class="w-5 h-5"></i>
-      </button>
-      <img id="modalImg" src="" alt="Certificate Preview" class="w-full h-auto rounded-xl object-contain" />
-    </div>
-  </div>
-
-  <footer class="py-6 border-t border-slate-900 text-center text-xs text-slate-400">
-    © 2026 Mohammed Rafi Shaik. Built with HTML, Tailwind CSS & JavaScript.
-  </footer>
-
-  <!-- ================= DYNAMIC JAVASCRIPT ================= -->
   <script>
     lucide.createIcons();
 
-    // Mobile Navbar Toggle
-    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    mobileBtn.addEventListener('click', () => {
+
+    mobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
 
-    // Close mobile nav on click
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
-    });
-
-    // Dynamic Project Filtering
     function filterProjects(category) {
       const cards = document.querySelectorAll('.project-card');
       const buttons = document.querySelectorAll('.project-filter-btn');
@@ -460,37 +404,23 @@
         btn.classList.remove('bg-indigo-600', 'text-white');
         btn.classList.add('bg-slate-800', 'text-slate-300');
       });
-      event.target.classList.add('bg-indigo-600', 'text-white');
-      event.target.classList.remove('bg-slate-800', 'text-slate-300');
+
+      if (event && event.target) {
+        event.target.classList.remove('bg-slate-800', 'text-slate-300');
+        event.target.classList.add('bg-indigo-600', 'text-white');
+      }
 
       cards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
           card.style.display = 'flex';
         } else {
           card.style.display = 'none';
         }
       });
     }
-
-    // Modal Lightbox Handlers
-    const certModal = document.getElementById('certModal');
-    const modalImg = document.getElementById('modalImg');
-
-    function openCertModal(src) {
-      modalImg.src = src;
-      certModal.classList.remove('hidden');
-      certModal.classList.add('flex');
-    }
-
-    function closeCertModal() {
-      certModal.classList.add('hidden');
-      certModal.classList.remove('flex');
-      modalImg.src = '';
-    }
-
-    certModal.addEventListener('click', (e) => {
-      if (e.target === certModal) closeCertModal();
-    });
+  </script>
+</body>
+</html>
   </script>
 </body>
 </html>
