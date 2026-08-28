@@ -1,1 +1,496 @@
-# pel_portfolio
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Rafi Shaik | AI/ML Engineer Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <style>
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#hero" class="text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+        MR.
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="#education" class="hover:text-indigo-400 transition-colors">Education</a>
+        <a href="#certifications" class="hover:text-indigo-400 transition-colors">Certifications</a>
+        <a href="#achievements" class="hover:text-indigo-400 transition-colors">Achievements</a>
+        <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="Mohammed_Rafi_Shaik_CV.pdf" download class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 transition-colors text-white shadow-lg shadow-indigo-500/20">
+          <i data-lucide="download" class="w-4 h-4"></i> Download CV
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 py-4 bg-slate-900 border-b border-slate-800 space-y-3 text-sm font-medium text-slate-300">
+      <a href="#about" class="block hover:text-indigo-400">About</a>
+      <a href="#skills" class="block hover:text-indigo-400">Skills</a>
+      <a href="#projects" class="block hover:text-indigo-400">Projects</a>
+      <a href="#education" class="block hover:text-indigo-400">Education</a>
+      <a href="#certifications" class="block hover:text-indigo-400">Certifications</a>
+      <a href="#achievements" class="block hover:text-indigo-400">Achievements</a>
+      <a href="#contact" class="block hover:text-indigo-400">Contact</a>
+      <a href="Mohammed_Rafi_Shaik_CV.pdf" download class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white w-full justify-center">
+        <i data-lucide="download" class="w-4 h-4"></i> Download CV
+      </a>
+    </div>
+  </header>
+
+  <main class="relative bg-grid">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero" class="min-h-screen pt-28 pb-16 flex items-center justify-center px-6">
+      <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+        
+        <div class="relative mb-6 group">
+          <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+          <div class="relative w-36 h-36 rounded-full overflow-hidden border-2 border-slate-700 bg-slate-900 flex items-center justify-center">
+            <i data-lucide="user" class="w-16 h-16 text-slate-400"></i>
+          </div>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-2">
+          Mohammed Rafi Shaik
+        </h1>
+        
+        <div class="flex items-center gap-2.5 mb-6">
+          <span class="text-xl text-indigo-400 font-semibold tracking-wide">AI/ML Engineer</span>
+          <a href="https://www.linkedin.com/in/mohammed-rafi-shaik-9186b3383/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#0a66c2] transition-colors p-1" title="LinkedIn Profile">
+            <i data-lucide="linkedin" class="w-5 h-5"></i>
+          </a>
+        </div>
+
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed mb-8">
+          Passionate AI/ML Engineer with a strong interest in artificial intelligence, machine learning, and data-driven technologies. I specialize in developing intelligent solutions using Python, machine learning algorithms, and data analysis techniques. With a strong foundation in programming and mathematics, I aim to transform complex problems into efficient, intelligent solutions that create real-world impact and drive innovation.
+        </p>
+
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="Mohammed_Rafi_Shaik_CV.pdf" download class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/30 transition-all duration-200">
+            <i data-lucide="download" class="w-5 h-5"></i> Download CV
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium border border-slate-700 hover:border-slate-500 bg-slate-900/60 hover:bg-slate-800 text-slate-200 transition-all duration-200">
+            <i data-lucide="mail" class="w-5 h-5"></i> Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ME ================= -->
+    <section id="about" class="py-20 px-6 border-t border-slate-800/80">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-8 flex items-center gap-3">
+          <i data-lucide="user-check" class="text-indigo-400 w-7 h-7"></i> About Me
+        </h2>
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm space-y-4 text-slate-300 leading-relaxed">
+          <p>
+            I am a Computer Science and Engineering student at <strong>Lovely Professional University</strong>[cite: 1]. My academic journey is built on continuous technical growth, achieving an 8.67 CGPA in B.Tech[cite: 1], 97% in Higher Secondary Education[cite: 1], and 95% in Secondary Education[cite: 1].
+          </p>
+          <p>
+            My experience spans full-stack application development to machine learning and natural language processing[cite: 1]. I enjoy solving complex challenges through structured algorithms and scalable data solutions[cite: 1].
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="py-20 px-6 border-t border-slate-800/80 bg-slate-950/40">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-12 flex items-center gap-3">
+          <i data-lucide="code-2" class="text-indigo-400 w-7 h-7"></i> Technical & Soft Skills
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition">
+            <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Languages</h3>
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-c-plain colored text-2xl"></i> <span>C</span></div>
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-cplusplus-plain colored text-2xl"></i> <span>C++</span></div>
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-javascript-plain colored text-2xl"></i> <span>JavaScript</span></div>
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-python-plain colored text-2xl"></i> <span>Python</span></div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition">
+            <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Frameworks & Web</h3>
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-html5-plain colored text-2xl"></i> <span>HTML5</span></div>
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-css3-plain colored text-2xl"></i> <span>CSS3</span></div>
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-streamlit-plain colored text-2xl"></i> <span>Streamlit</span></div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition">
+            <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Tools & DB</h3>
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-mysql-plain colored text-2xl"></i> <span>MySQL</span></div>
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-mongodb-plain colored text-2xl"></i> <span>MongoDB</span></div>
+              <div class="flex items-center gap-3 text-slate-200"><i class="devicon-pandas-plain colored text-2xl"></i> <span>Pandas / Scikit-Learn</span></div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition">
+            <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Core Skills</h3>
+            <div class="flex flex-col gap-3 text-slate-200">
+              <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400"></i><span class="text-sm">Problem Solving</span></div>
+              <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400"></i><span class="text-sm">Project Management</span></div>
+              <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400"></i><span class="text-sm">Adaptability</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="py-20 px-6 border-t border-slate-800/80">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight flex items-center gap-3">
+            <i data-lucide="folder-git-2" class="text-indigo-400 w-7 h-7"></i> Projects
+          </h2>
+          <!-- Filter Buttons -->
+          <div class="flex items-center gap-2 text-xs font-medium">
+            <button onclick="filterProjects('all')" class="project-filter-btn px-3 py-1.5 rounded-lg bg-indigo-600 text-white transition">All</button>
+            <button onclick="filterProjects('web')" class="project-filter-btn px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">Web</button>
+            <button onclick="filterProjects('aiml')" class="project-filter-btn px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">AI/ML</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Project 1 -->
+          <div class="project-card group bg-slate-900/60 border border-slate-800 hover:border-slate-700 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="web">
+            <div class="h-48 overflow-hidden bg-slate-950 flex items-center justify-center border-b border-slate-800">
+              <img src="Expense Tracker.jpg" alt="Student Expense Tracker" class="w-full h-full object-contain p-2 group-hover:scale-105 transition duration-300" />
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-lg font-bold text-white">Student Expense Tracker</h3>
+                  <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 font-medium">Completed</span>
+                </div>
+                <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                  Record, manage, and monitor daily student expenses[cite: 1]. Includes CRUD operations, categorization, and automatic totals[cite: 1].
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300 font-mono">HTML</span>
+                  <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300 font-mono">CSS</span>
+                  <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300 font-mono">JavaScript</span>
+                </div>
+              </div>
+              <a href="https://mohammedrafi12.github.io/student-expenses-tracker/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                Live Demo <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card group bg-slate-900/60 border border-slate-800 hover:border-slate-700 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="aiml">
+            <div class="h-48 overflow-hidden bg-slate-950 flex items-center justify-center border-b border-slate-800">
+              <img src="Google Spam Algorithm Update Rolling Out on October 19, 2022.jpg" alt="AI Spam Detection" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-lg font-bold text-white">AI-Based Spam Detection System</h3>
+                  <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-950 text-amber-400 border border-amber-800 font-medium">In Progress</span>
+                </div>
+                <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                  NLP and ML spam classification pipeline using TF-IDF feature extraction[cite: 1]. Achieved 98.16% accuracy and 92.31% F1-score with SVM[cite: 1], deployed via Streamlit[cite: 1].
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300 font-mono">Python</span>
+                  <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300 font-mono">Scikit-Learn</span>
+                  <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300 font-mono">Streamlit</span>
+                </div>
+              </div>
+              <span class="inline-flex items-center gap-2 text-sm text-slate-400">
+                <i data-lucide="clock" class="w-4 h-4"></i> Deployment in Progress
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="py-20 px-6 border-t border-slate-800/80 bg-slate-950/40">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-12 flex items-center gap-3">
+          <i data-lucide="graduation-cap" class="text-indigo-400 w-7 h-7"></i> Education
+        </h2>
+
+        <div class="space-y-6">
+          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-white">Lovely Professional University</h3>
+              <p class="text-indigo-400 text-sm">Bachelor of Technology - Computer Science and Engineering</p>
+              <p class="text-xs text-slate-400 mt-1">Punjab, India</p>
+            </div>
+            <div class="md:text-right">
+              <span class="inline-block px-3 py-1 rounded-full bg-slate-800 text-indigo-300 font-semibold text-xs mb-1">CGPA: 8.67</span>
+              <p class="text-xs text-slate-400">Since August 2025</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-white">Sri Chaitanya Junior College</h3>
+              <p class="text-slate-300 text-sm">Higher Secondary Education (12th Grade)</p>
+              <p class="text-xs text-slate-400 mt-1">Vijayawada, Andhra Pradesh</p>
+            </div>
+            <div class="md:text-right">
+              <span class="inline-block px-3 py-1 rounded-full bg-slate-800 text-indigo-300 font-semibold text-xs mb-1">Percentage: 97%</span>
+              <p class="text-xs text-slate-400">May 2023 - March 2025</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-white">Sri Chaitanya School</h3>
+              <p class="text-slate-300 text-sm">Secondary Education (10th Grade)</p>
+              <p class="text-xs text-slate-400 mt-1">Nandyala, Andhra Pradesh</p>
+            </div>
+            <div class="md:text-right">
+              <span class="inline-block px-3 py-1 rounded-full bg-slate-800 text-indigo-300 font-semibold text-xs mb-1">Percentage: 95%</span>
+              <p class="text-xs text-slate-400">Completed March 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section id="certifications" class="py-20 px-6 border-t border-slate-800/80">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-12 flex items-center gap-3">
+          <i data-lucide="award" class="text-indigo-400 w-7 h-7"></i> Certifications
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Cert 1 -->
+          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col">
+            <div class="bg-slate-950 p-2 cursor-pointer group relative" onclick="openCertModal('cert1-1.jpeg')">
+              <img src="cert1-1.jpeg" alt="Network Management Systems Fundamentals Certificate" class="w-full h-auto rounded-lg border border-slate-800" />
+              <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition rounded-lg">
+                <span class="text-xs font-semibold text-white flex items-center gap-1.5"><i data-lucide="zoom-in" class="w-4 h-4"></i> Click to View</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-white text-base mb-1">Network Management Systems Fundamentals</h3>
+              <p class="text-xs text-indigo-400 mb-2">Infosys Springboard • Issued Jan 26, 2026</p>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col">
+            <div class="bg-slate-950 p-2 cursor-pointer group relative" onclick="openCertModal('cert2-1.jpeg')">
+              <img src="cert2-1.jpeg" alt="Programming Using C++ Certificate" class="w-full h-auto rounded-lg border border-slate-800" />
+              <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition rounded-lg">
+                <span class="text-xs font-semibold text-white flex items-center gap-1.5"><i data-lucide="zoom-in" class="w-4 h-4"></i> Click to View</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-white text-base mb-1">Programming Using C++</h3>
+              <p class="text-xs text-indigo-400 mb-2">Infosys Springboard • Issued Feb 6, 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section id="achievements" class="py-20 px-6 border-t border-slate-800/80 bg-slate-950/40">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-8 flex items-center gap-3">
+          <i data-lucide="sparkles" class="text-indigo-400 w-7 h-7"></i> Achievements
+        </h2>
+
+        <div class="space-y-4">
+          <!-- Solved Many Programming Codes -->
+          <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl flex items-start gap-4">
+            <div class="p-2.5 bg-indigo-950 text-indigo-400 rounded-xl border border-indigo-800">
+              <i data-lucide="code" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-base">Solved Many Programming Codes</h3>
+              <p class="text-sm text-slate-300 mt-1">Actively practiced and solved numerous algorithmic challenges and programming problems across diverse platforms to strengthen core problem-solving and coding proficiency.</p>
+            </div>
+          </div>
+
+          <!-- Community Development Project -->
+          <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl flex items-start gap-4">
+            <div class="p-2.5 bg-indigo-950 text-indigo-400 rounded-xl border border-indigo-800">
+              <i data-lucide="shield-alert" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-base">Community Development Project</h3>
+              <p class="text-sm text-slate-300 mt-1">Successfully organized and contributed to digital and cyber awareness initiatives for community engagement[cite: 1].</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT & SOCIALS ================= -->
+    <section id="contact" class="py-20 px-6 border-t border-slate-800/80">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-4">Get In Touch</h2>
+        <p class="text-slate-400 text-sm max-w-md mx-auto mb-10">
+          Feel free to reach out for collaborations, project inquiries, or AI/ML discussions!
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+          <a href="mailto:mohammedrafi4727@gmail.com" class="p-6 bg-slate-900/60 border border-slate-800 hover:border-slate-700 rounded-2xl flex flex-col items-center gap-2 group transition duration-200">
+            <i data-lucide="mail" class="w-6 h-6 text-indigo-400 group-hover:scale-110 transition"></i>
+            <span class="text-xs uppercase font-medium tracking-wider text-slate-400">Email</span>
+            <span class="text-sm font-semibold text-slate-200 break-all">mohammedrafi4727@gmail.com</span>
+          </a>
+
+          <a href="tel:+919703832820" class="p-6 bg-slate-900/60 border border-slate-800 hover:border-slate-700 rounded-2xl flex flex-col items-center gap-2 group transition duration-200">
+            <i data-lucide="phone" class="w-6 h-6 text-indigo-400 group-hover:scale-110 transition"></i>
+            <span class="text-xs uppercase font-medium tracking-wider text-slate-400">Phone</span>
+            <span class="text-sm font-semibold text-slate-200">+91 9703832820</span>
+          </a>
+
+          <div class="p-6 bg-slate-900/60 border border-slate-800 rounded-2xl flex flex-col items-center gap-2">
+            <i data-lucide="map-pin" class="w-6 h-6 text-indigo-400"></i>
+            <span class="text-xs uppercase font-medium tracking-wider text-slate-400">Location</span>
+            <span class="text-sm font-semibold text-slate-200">Nandyala, Andhra Pradesh</span>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-6 pt-6 border-t border-slate-900">
+          <a href="https://www.linkedin.com/in/mohammed-rafi-shaik-9186b3383/" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-900 border border-slate-800 hover:border-indigo-500 rounded-full text-slate-300 hover:text-white transition duration-200" title="LinkedIn Profile">
+            <i data-lucide="linkedin" class="w-6 h-6"></i>
+          </a>
+          <a href="https://github.com/MohammedRafi12" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-900 border border-slate-800 hover:border-indigo-500 rounded-full text-slate-300 hover:text-white transition duration-200" title="GitHub Profile">
+            <i data-lucide="github" class="w-6 h-6"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= LIGHTBOX MODAL ================= -->
+  <div id="certModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="relative max-w-3xl w-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden p-2">
+      <button onclick="closeCertModal()" class="absolute top-4 right-4 z-10 p-2 bg-slate-950/80 text-slate-300 hover:text-white rounded-full border border-slate-700">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <img id="modalImg" src="" alt="Certificate Preview" class="w-full h-auto rounded-xl object-contain" />
+    </div>
+  </div>
+
+  <footer class="py-6 border-t border-slate-900 text-center text-xs text-slate-400">
+    © 2026 Mohammed Rafi Shaik. Built with HTML, Tailwind CSS & JavaScript.
+  </footer>
+
+  <!-- ================= DYNAMIC JAVASCRIPT ================= -->
+  <script>
+    lucide.createIcons();
+
+    // Mobile Navbar Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile nav on click
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Dynamic Project Filtering
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      const buttons = document.querySelectorAll('.project-filter-btn');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-indigo-600', 'text-white');
+        btn.classList.add('bg-slate-800', 'text-slate-300');
+      });
+      event.target.classList.add('bg-indigo-600', 'text-white');
+      event.target.classList.remove('bg-slate-800', 'text-slate-300');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Modal Lightbox Handlers
+    const certModal = document.getElementById('certModal');
+    const modalImg = document.getElementById('modalImg');
+
+    function openCertModal(src) {
+      modalImg.src = src;
+      certModal.classList.remove('hidden');
+      certModal.classList.add('flex');
+    }
+
+    function closeCertModal() {
+      certModal.classList.add('hidden');
+      certModal.classList.remove('flex');
+      modalImg.src = '';
+    }
+
+    certModal.addEventListener('click', (e) => {
+      if (e.target === certModal) closeCertModal();
+    });
+  </script>
+</body>
+</html>
